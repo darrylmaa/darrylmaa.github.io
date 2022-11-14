@@ -11403,7 +11403,24 @@ p.lead {
   background-color: #bd5d38;
 }
 
-
+.social-icons .social-icon1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social-icons .social-icon1:last-child {
+  margin-right: 0;
+}
+.social-icons .social-icon1:hover {
+  background-color: #bd5d38;
+}
 
 .dev-icons {
   font-size: 3rem;
