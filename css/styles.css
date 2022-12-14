@@ -600,18 +600,52 @@ progress {
   content: "— ";
 }
 
+.img-button {
+  cursor: pointer;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 
+.img-size{
+  /* 	padding: 0;
+    margin: 0; */
+    width: 800px;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .img-c19{
+    /* 	padding: 0;
+      margin: 0; */
+      width: auto;
+      height: fit-content;
+      background-size: cover;
+      overflow: hidden;
+    }
+
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: var(--bs-primary-rgb);
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
+}
+
+.img-thumbnail-hover {
+  border: 1px solid rgba(55, 26, 221, 0.867);
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.img-thumbnail-hover:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  opacity: 0.7;
 }
 
 .figure {
@@ -5484,16 +5518,21 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: auto; 
   overflow-y: auto;
   outline: 0;
+  text-align: center;
 }
 
 .modal-dialog {
   position: relative;
-  width: auto;
+  max-width: fit-content;
+  max-height: fit-content;
+  width: auto !important;
+  height: auto !important;
   margin: 0.5rem;
   pointer-events: none;
+  display: table;
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
@@ -5532,7 +5571,8 @@ textarea.form-control-lg {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto !important;
+  height: auto !important;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
@@ -5581,6 +5621,8 @@ textarea.form-control-lg {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
+  width: auto !important;
+  height: auto !important; 
 }
 
 .modal-footer {
@@ -6157,7 +6199,7 @@ textarea.form-control-lg {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--bs-body-bg);
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
